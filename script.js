@@ -1,10 +1,12 @@
-// ====== CONFIG (edita aqui em 10s) ======
-const WHATS_NUMBER = "5511957704065"; // 55 + DDD + número
-const INSTAGRAM_URL = "https://instagram.com/"; // coloca o @ certo depois
-const MAPS_URL =
-  "https://www.google.com/maps?q=R.%20Cidade%20de%20S%C3%A3o%20Paulo,%20221%20-%20Vila%20Engenho%20Novo,%20Barueri%20-%20SP,%2006415-070";
+// Ativa animações só quando o JS realmente carregou
+document.documentElement.classList.add("js");
 
-// Mensagem base
+// ====== CONFIG ======
+const WHATS_NUMBER = "5511957704065";
+const INSTAGRAM_URL = "https://www.instagram.com/barbeariadomruiz";
+const AGENDA_URL = "https://chat.inbarberapp.com/Agendadomruiz";
+
+// ====== WhatsApp ======
 function makeWhatsMessage({ service, price, time }) {
   const header = "Olá! Vim pelo site da Barbearia Dom Ruiz e quero agendar.";
   const line1 = service ? `\n\nServiço: ${service}` : "";
@@ -20,50 +22,17 @@ function openWhats(message) {
   window.open(url, "_blank");
 }
 
-// CTA links fixos
-function setCtas() {
-  const defaultMsg = makeWhatsMessage({});
-  const waTargets = [
-    "ctaWhatsHero",
-    "ctaWhatsCard",
-    "ctaWhatsServices",
-    "ctaWhatsContact",
-    "ctaWhatsAbout",
-    "ctaWhatsHeader",
-    "waFloat",
-  ];
-
-  waTargets.forEach((id) => {
-    const el = document.getElementById(id);
-    if (!el) return;
-    el.href = `https://wa.me/${WHATS_NUMBER}?text=${encodeURIComponent(defaultMsg)}`;
-  });
-
-  const instaTargets = ["ctaInstaCard", "ctaInstaHeader", "ctaInstaLocal", "ctaInstaContact"];
-  instaTargets.forEach((id) => {
-    const el = document.getElementById(id);
-    if (!el) return;
-    el.href = INSTAGRAM_URL;
-  });
-
-  const mapsBtn = document.getElementById("ctaMaps");
-  if (mapsBtn) mapsBtn.href = MAPS_URL;
-
-  const year = document.getElementById("year");
-  if (year) year.textContent = new Date().getFullYear();
-}
-
-setCtas();
-
 // ====== Menu mobile ======
 const btn = document.querySelector(".menuBtn");
 const mobile = document.getElementById("mobileNav");
 
 function toggleMobile() {
+  if (!mobile || !btn) return;
   const open = mobile.classList.toggle("open");
   btn.setAttribute("aria-expanded", open ? "true" : "false");
   mobile.setAttribute("aria-hidden", open ? "false" : "true");
 }
+
 if (btn) btn.addEventListener("click", toggleMobile);
 
 if (mobile) {
@@ -72,19 +41,13 @@ if (mobile) {
   });
 }
 
-// ====== Clique nos serviços => WhatsApp com mensagem pronta ======
+// ====== Clique nos serviços => WhatsApp ======
 document.querySelectorAll(".serviceCard").forEach((card) => {
-  const go = () => {
+  card.addEventListener("click", () => {
     const service = card.dataset.service || "";
     const price = card.dataset.price || "";
     const time = card.dataset.time || "";
     openWhats(makeWhatsMessage({ service, price, time }));
-  };
-
-  card.addEventListener("click", (e) => {
-    // se clicou no botão, também agenda
-    if (e.target.classList.contains("btnMini")) go();
-    else go();
   });
 });
 
@@ -111,7 +74,11 @@ Obrigado!
   });
 }
 
-// ====== Reveal animations ao rolar ======
+// ====== Links rápidos (se você quiser usar ids depois) ======
+const year = document.getElementById("year");
+if (year) year.textContent = new Date().getFullYear();
+
+// ====== Reveal animations ======
 const reveals = document.querySelectorAll(".reveal");
 const observer = new IntersectionObserver(
   (entries) => {
