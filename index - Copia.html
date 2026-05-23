@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Barbearia Dom Ruiz | Agende Online</title>
+  <meta name="description" content="Barbearia Dom Ruiz em Barueri. Cortes, barba e sobrancelha. Agende direto pela Agenda Online (InBarber)." />
+  <meta name="theme-color" content="#0E2D4A" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="preload">
+  <!-- Header -->
+  <header class="header" id="topo" data-header>
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Ir para o início">
+        <img class="brand__logo" src="logo.jpg.jpeg" alt="Logo Barbearia Dom Ruiz" />
+        <span class="brand__text">
+          <span class="brand__name">Barbearia Dom Ruiz</span>
+          <span class="brand__role">Rodrigues • Barueri - SP</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Menu">
+        <a href="#servicos">Cortes</a>
+        <a href="#espaco">Nosso Espaço</a>
+        <a href="#local">Localização</a>
+        <a href="#contato">Contato</a>
+
+        <a class="nav__cta" target="_blank" rel="noopener"
+          href="https://agendamentos.bestbarbers.app/barbershop/agendadomruiz">
+          Agendar Online
+        </a>
+      </nav>
+
+      <button class="menuBtn" aria-label="Abrir menu" aria-expanded="false" data-menu-btn>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobileNav" id="mobileNav" aria-hidden="true" data-mobile-nav>
+      <div class="container mobileNav__panel">
+        <a href="#servicos">Cortes</a>
+        <a href="#espaco">Nosso Espaço</a>
+        <a href="#local">Localização</a>
+        <a href="#contato">Contato</a>
+
+        <a class="btn btn--primary full"
+          target="_blank" rel="noopener"
+          href="https://agendamentos.bestbarbers.app/barbershop/agendadomruiz">
+          Agendar Online
+        </a>
+
+        <a class="btn btn--ghost full"
+          target="_blank" rel="noopener"
+          href="https://www.instagram.com/barbeariadomruiz">
+          Instagram
+        </a>
+
+        <a class="btn btn--ghost full"
+          href="mailto:barbeariadomruiz@gmail.com">
+          Enviar Email
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="inicio" class="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__grain" aria-hidden="true"></div>
+
+    <div class="container hero__wrap">
+      <section class="hero__text reveal">
+        <!-- selo com logo -->
+        <div class="hero__seal" aria-label="Logo Barbearia Dom Ruiz">
+          <img src="logo.jpg.jpeg" alt="Barbearia Dom Ruiz" loading="lazy" />
+        </div>
+
+        <div class="hero__badge">
+          <span class="dot"></span>
+          <span>Agendamentos abertos • Barueri</span>
+        </div>
+
+        <h1>
+          Barbearia Dom Ruiz.<br />
+          <span class="shine">Visual alinhado, no detalhe.</span>
+        </h1>
+
+        <p class="lead">
+          Um espaço moderno e acolhedor feito para quem valoriza estilo, cuidado e bom atendimento.
+Aqui você encontra cortes de cabelo, barba, sobrancelha e muito mais, sempre com qualidade e aquele atendimento de respeito.
+Nosso objetivo é proporcionar uma experiência única, com ambiente confortável e serviços pensados para toda a família.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--big"
+            target="_blank" rel="noopener"
+            href="https://agendamentos.bestbarbers.app/barbershop/agendadomruiz">
+            Agendar na Agenda Online
+          </a>
+
+          <a class="btn btn--ghost btn--big" href="#servicos">
+            Ver serviços
+          </a>
+        </div>
+
+        <div class="hero__bullets">
+          <div class="bullet">✔️ Acabamento limpo</div>
+          <div class="bullet">✔️ Ambiente premium</div>
+          <div class="bullet">✔️ Barueri • Vila Engenho Novo</div>
+          <div class="bullet">✔️ Agenda online (bestbarbers)</div>
+        </div>
+
+        <div class="hero__scrollHint">
+          <span class="chev" aria-hidden="true"></span>
+          <span>Role para ver mais</span>
+        </div>
+      </section>
+
+      <!-- Card do barbeiro -->
+      <aside class="hero__card reveal">
+        <div class="hero__image">
+          <img src="barbeiro.01.jpg.jpeg" alt="Rodrigues - Barbeiro" loading="lazy" />
+        </div>
+
+        <div class="hero__panel">
+          <div class="panel__top">
+            <div>
+              <h2>Rodrigues</h2>
+              <p class="muted">Barbeiro • Dom Ruiz</p>
+            </div>
+            <span class="pill">Barueri</span>
+          </div>
+
+          <div class="panel__grid">
+            <div class="mini">
+              <span>Atendimento</span>
+              <strong>Seg 13h-19h, Ter-Sex 10h–19h</strong>
+            </div>
+            <div class="mini">
+              <span>Sábado</span>
+              <strong>09h–19h</strong>
+            </div>
+            <div class="mini">
+              <span>Pagamento</span>
+              <strong>Pix / Débito / Crédito</strong>
+            </div>
+            <div class="mini">
+              <span>Agendamento</span>
+              <strong>bestbarbers</strong>
+            </div>
+          </div>
+
+          <a class="btn btn--primary full"
+            target="_blank" rel="noopener"
+            href="https://agendamentos.bestbarbers.app/barbershop/agendadomruiz">
+            Agendar Online
+          </a>
+
+          <div class="miniLinks">
+            <a class="chip" target="_blank" rel="noopener" href="https://www.instagram.com/barbeariadomruiz">Instagram</a>
+            <a class="chip" href="mailto:barbeariadomruiz@gmail.com">Email</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Serviços -->
+  <section id="servicos" class="section">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="kicker">Cortes e Serviços</p>
+        <h2>Escolha o serviço e agende direto na agenda online</h2>
+        <p class="muted max">
+          Todos os botões de agendamento vão direto para o <strong>bestbarbers</strong>.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal">
+          <img class="card__img" src="corte.social.jpg" alt="Corte Social" loading="lazy">
+          <div class="card__body">
+            <h3>Corte Social</h3>
+            <p class="muted">Clássico, alinhado e pronto pra qualquer ocasião.</p>
+            <div class="meta"><span>R$ 30,00</span><span>•</span><span>25 min</span></div>
+            <a class="linkBtn" target="_blank" rel="noopener" href="https://agendamentos.bestbarbers.app/barbershop/agendadomruiz">Agendar Online →</a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <img class="card__img" src="corte.na.tesoura.jpg" alt="Corte na Tesoura" loading="lazy">
+          <div class="card__body">
+            <h3>Corte na Tesoura</h3>
+            <p class="muted">Acabamento natural com técnica e controle total.</p>
+            <div class="meta"><span>R$ 40,00</span><span>•</span><span>40 min</span></div>
+            <a class="linkBtn" target="_blank" rel="noopener" href="https://agendamentos.bestbarbers.app/barbershop/agendadomruiz">Agendar Online →</a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <img class="card__img" src="degrade.jpg" alt="Corte Degradê" loading="lazy">
+          <div class="card__body">
+            <h3>Corte Degradê</h3>
+            <p class="muted">Transição suave, alinhamento limpo e estilo moderno.</p>
+            <div class="meta"><span>R$ 35,00</span><span>•</span><span>30–35 min</span></div>
+            <a class="linkBtn" target="_blank" rel="noopener" href="https://agendamentos.bestbarbers.app/barbershop/agendadomruiz">Agendar Online →</a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <img class="card__img" src="barba.jpg" alt="Barba" loading="lazy">
+          <div class="card__body">
+            <h3>Barba</h3>
+            <p class="muted">Modelagem, alinhamento e acabamento no detalhe.</p>
+            <div class="meta"><span>R$ 30,00</span><span>•</span><span>20 min</span></div>
+            <a class="linkBtn" target="_blank" rel="noopener" href="https://agendamentos.bestbarbers.app/barbershop/agendadomruiz">Agendar Online →</a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <img class="card__img" src="sobrancelha.jpg" alt="Sobrancelha" loading="lazy">
+          <div class="card__body">
+            <h3>Sobrancelha</h3>
+            <p class="muted">Acerto rápido pra deixar o rosto mais marcante.</p>
+            <div class="meta"><span>R$ 10,00</span><span>•</span><span>5 min</span></div>
+            <a class="linkBtn" target="_blank" rel="noopener" href="https://agendamentos.bestbarbers.app/barbershop/agendadomruiz">Agendar Online →</a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <img class="card__img" src="corte.barba.jpg" alt="Corte + Barba" loading="lazy">
+          <div class="card__body">
+            <h3>Corte + Barba</h3>
+            <p class="muted">Combo completo: visual alinhado do cabelo à barba.</p>
+            <div class="meta"><span>R$ 60,00</span><span>•</span><span>55 min</span></div>
+            <a class="linkBtn" target="_blank" rel="noopener" href="https://agendamentos.bestbarbers.app/barbershop/agendadomruiz">Agendar Online →</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="center reveal">
+        <a class="btn btn--primary btn--big" target="_blank" rel="noopener"
+          href="https://agendamentos.bestbarbers.app/barbershop/agendadomruiz">
+          Ver horários na Agenda Online
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosso Espaço -->
+  <section id="espaco" class="section section--alt">
+    <div class="container split">
+      <div class="reveal">
+        <p class="kicker">Nosso Espaço</p>
+        <h2>Ambiente premium, confortável e do jeito certo</h2>
+        <p class="muted max">
+          Um espaço pensado pra você sentar, relaxar e sair com o visual alinhado.
+          Foco total em detalhe, respeito e experiência.
+        </p>
+
+        <div class="spaceMini">
+          <div class="miniLine"><span class="miniDot"></span> Atendimento com calma e precisão</div>
+          <div class="miniLine"><span class="miniDot"></span> Ambiente limpo e organizado</div>
+          <div class="miniLine"><span class="miniDot"></span> Estilo moderno e confortável</div>
+        </div>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" target="_blank" rel="noopener"
+            href="https://agendamentos.bestbarbers.app/barbershop/agendadomruiz">
+            Agendar Online
+          </a>
+          <a class="btn btn--ghost" href="#local">Ver localização</a>
+        </div>
+      </div>
+
+      <div class="panel reveal">
+        <div class="spaceMediaStack">
+          <!-- Mantive sua imagem, NÃO alterei -->
+          
+
+          <!-- VIDEO REELS 9:16 -->
+          <div class="spaceVideoBox">
+            <video class="spaceVideo" controls preload="metadata" poster="espaço.jpg">
+              <source src="video.baber.jpg.mp4" type="video/mp4" />
+              Seu navegador não suporta vídeo.
+            </video>
+          </div>
+
+          <p class="tiny muted" style="margin:0;">
+           
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Localização -->
+  <section id="local" class="section">
+    <div class="container split">
+      <div class="reveal">
+        <p class="kicker">Localização</p>
+        <h2>Barueri - SP</h2>
+        <p class="muted">
+          <strong>Endereço:</strong> R. Cidade de São Paulo, 221 - Vila Engenho Novo, Barueri - SP, 06415-070, Brasil
+        </p>
+
+        <div class="hours">
+          <h3>Horários</h3>
+          <ul class="hours__list">
+            <li><span>Domingo</span><strong>Fechada</strong></li>
+            <li><span>Segunda</span><strong>13:00 - 19:00</strong></li>
+            <li><span>Terça</span><strong>10:00 - 19:00</strong></li>
+            <li><span>Quarta</span><strong>10:00 - 19:00</strong></li>
+            <li><span>Quinta</span><strong>10:00 - 19:00</strong></li>
+            <li><span>Sexta</span><strong>10:00 - 19:00</strong></li>
+            <li><span>Sábado</span><strong>09:00 - 19:00</strong></li>
+          </ul>
+        </div>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" target="_blank" rel="noopener"
+            href="https://www.google.com/maps/search/?api=1&query=R.+Cidade+de+S%C3%A3o+Paulo%2C+221+-+Vila+Engenho+Novo%2C+Barueri+-+SP%2C+06415-070">
+            Abrir no Google Maps
+          </a>
+
+          <a class="btn btn--ghost" target="_blank" rel="noopener"
+            href="https://agendamentos.bestbarbers.app/barbershop/agendadomruiz">
+            Agendar Online
+          </a>
+        </div>
+      </div>
+
+      <div class="panel reveal">
+        <h3>Como agendar</h3>
+        <ol class="stepsList">
+          <li>Abra a <strong>Agenda Online</strong>.</li>
+          <li>Escolha o serviço e o horário disponível.</li>
+          <li>Confirme o agendamento.</li>
+          <li>Pronto — te esperamos na Dom Ruiz.</li>
+        </ol>
+
+        <a class="btn btn--primary full" target="_blank" rel="noopener"
+          href="https://agendamentos.bestbarbers.app/barbershop/agendadomruiz">
+          Abrir Agenda Online
+        </a>
+
+        <p class="tiny muted">Pagamento é feito na barbearia: Pix / Débito / Crédito.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="section section--alt">
+    <div class="container split">
+      <div class="reveal">
+        <p class="kicker">Contato</p>
+        <h2>Fale com a Barbearia Dom Ruiz</h2>
+        <p class="muted max">
+          Agendamento direto pela <strong>Agenda Online</strong>.
+          Para dúvidas rápidas, use o WhatsApp flutuante ou o Instagram.
+        </p>
+
+        <div class="contactCards">
+          <div class="contactCard">
+            <strong>Agenda Online</strong>
+            <span class="muted">bestbarbers</span>
+          </div>
+          <div class="contactCard">
+            <strong>Email</strong>
+            <span class="muted">barbeariadomruiz@gmail.com</span>
+          </div>
+          <div class="contactCard">
+            <strong>Instagram</strong>
+            <span class="muted">@barbeariadomruiz</span>
+          </div>
+          <div class="contactCard">
+            <strong>WhatsApp</strong>
+            <span class="muted">(11) 95770-4065</span>
+          </div>
+        </div>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" target="_blank" rel="noopener"
+            href="https://agendamentos.bestbarbers.app/barbershop/agendadomruiz">
+            Agendar Online
+          </a>
+          <a class="btn btn--ghost" target="_blank" rel="noopener"
+            href="mailto:barbeariadomruiz@gmail.com">
+            Enviar Email
+          </a>
+        </div>
+      </div>
+
+      <div class="panel reveal">
+        <h3>Atendimento</h3>
+        <p class="muted">
+          Clique em <strong>Agendar Online</strong> para escolher o horário.
+          WhatsApp e Instagram ficam flutuando no canto pra facilitar.
+        </p>
+
+        <a class="btn btn--primary full" target="_blank" rel="noopener"
+          href="https://agendamentos.bestbarbers.app/barbershop/agendadomruiz">
+          Agendar Online
+        </a>
+
+        <a class="btn btn--ghost full" target="_blank" rel="noopener"
+          href="https://www.instagram.com/barbeariadomruiz">
+          Ver Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Avaliações -->
+  <section id="avaliacoes" class="section">
+    <div class="container">
+      <div class="reviewBox reveal">
+        <div class="reviewBox__content">
+          <p class="kicker">Avaliação</p>
+          <h2>Seu feedback é importante para a Barbearia Dom Ruiz</h2>
+          <p class="muted max">
+            Poste uma avaliação no nosso perfil e ajude mais clientes a conhecerem
+            a experiência da <strong>Barbearia Dom Ruiz</strong>.
+          </p>
+        </div>
+
+        <div class="reviewBox__actions">
+          <a class="btn btn--primary btn--big"
+             href="https://g.page/r/CVLKA1TpNAbTEAE/review"
+             target="_blank"
+             rel="noopener">
+            Deixar minha avaliação
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="reveal">
+        <div class="footer__brand">
+          <img class="footer__logo" src="logo.jpg.jpeg" alt="Logo Dom Ruiz" />
+          <div>
+            <strong>Barbearia Dom Ruiz</strong>
+            <div class="tiny muted">Barueri • Rodrigues • Atendimento com estilo</div>
+          </div>
+        </div>
+        <p class="tiny muted">© <span id="year"></span> Barbearia Dom Ruiz. Todos os direitos reservados.</p>
+      </div>
+
+      <div class="footer__links reveal">
+        <a href="#servicos">Cortes</a>
+        <a href="#espaco">Nosso Espaço</a>
+        <a href="#local">Local</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </div>
+  </footer>
+<!-- Floating: WhatsApp + Instagram (ícones oficiais) -->
+<div class="socialFloat" aria-label="Acesso rápido">
+  <a class="socialFloat__btn socialFloat__btn--ig"
+     href="https://www.instagram.com/barbeariadomruiz"
+     target="_blank" rel="noopener"
+     aria-label="Abrir Instagram">
+    <img
+      class="socialFloat__icon"
+      src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+      alt=""
+      loading="lazy"
+      decoding="async"
+    />
+  </a>
+
+  <a class="socialFloat__btn socialFloat__btn--wa"
+     href="https://wa.me/5511957704065?text=Ol%C3%A1%21%20Tenho%20uma%20d%C3%BAvida%20sobre%20a%20Barbearia%20Dom%20Ruiz."
+     target="_blank" rel="noopener"
+     aria-label="Chamar no WhatsApp">
+    <img
+      class="socialFloat__icon"
+      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+      alt=""
+      loading="lazy"
+      decoding="async"
+    />
+  </a>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
