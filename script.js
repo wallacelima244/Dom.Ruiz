@@ -4,7 +4,7 @@ document.documentElement.classList.add("js");
 // ====== CONFIG ======
 const WHATS_NUMBER = "5511957704065";
 const INSTAGRAM_URL = "https://www.instagram.com/barbeariadomruiz";
-const AGENDA_URL = "https://agendamentos.bestbarbers.app/barbershop/agendadomruiz";
+const AGENDA_URL = "https://chat.inbarberapp.com/Agendadomruiz";
 
 // ====== WhatsApp ======
 function makeWhatsMessage({ service, price, time }) {
