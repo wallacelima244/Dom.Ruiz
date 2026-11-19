@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/manutencao.html",
+      "status": 503,
+      "headers": {
+        "Cache-Control": "no-store, max-age=0",
+        "Retry-After": "3600"
+      }
+    }
+  ]
+}
